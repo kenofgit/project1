@@ -1,0 +1,83 @@
+*** Settings ***
+Library           Selenium2Library
+###############################################################
+***Keyword***
+InputLoginCXM_SIT
+	[Arguments] 	${InputLogin}
+	Input Usr		name=username 	${InputUsername}
+	Input Pwd		name=password	${InputPwd}
+	Press Key     	name=password	\\13
+	
+Show Case
+	[Arguments]	${showcasecalculate}
+	Element Should Contain	cwles	${showcasecalculate}
+Assert Result
+	[Arguments]    	${expected result}
+    	Element Should Contain	cwos	${expected result}
+#############################################################
+*** Variables ***
+${InputCXM_SIT}		https://cxmsit.bizcuit-voc.com/cxmatvrep/login.jsp
+${InputUsername}	pornsiri	
+${InputPwd}			cxmadmin
+
+
+#############################################################
+*** Test Cases ***
+TC1-Show Google Calculator 
+#Open Web browser 
+	Open Browser    	${InputCXM_SIT}	  Chrome
+    InputLoginCXM_SIT	${InputLogin}
+#Show Calculator
+    	Wait Until Page Contains Element	cwmcwd
+#Check button line1
+	Element Should Contain	cwbt00	Rad
+	Page Should Contain Element	cwrdc 	 
+	Element Should Contain	cwbt02	x!
+	Element Should Contain	cwbt03	(
+	Element Should Contain	cwbt04	)
+	Element Should Contain	cwbt05	%
+	#Element Should Contain	cwbt06	AC
+#Check button line2
+	Element Should Contain	cwinvbtn	Inv
+	Element Should Contain	cwbt11	sin
+	Element Should Contain	cwbt12	ln
+	Element Should Contain	cwbt13	7
+	Element Should Contain	cwbt14	8
+	Element Should Contain	cwbt15	9
+	Element Should Contain	cwbt16	÷
+#Check button line3
+	Element Should Contain	cwbt20	π
+	Element Should Contain	cwbt21	cos
+	Element Should Contain	cwbt22	log
+	Element Should Contain	cwbt23	4
+	Element Should Contain	cwbt24	5
+	Element Should Contain	cwbt25	6
+	Element Should Contain	cwbt26	×
+#Check button line4	
+	Element Should Contain	cwbt30	e
+	Element Should Contain	cwbt31	tan
+	Element Should Contain	cwbt32	√
+	Element Should Contain	cwbt33	1
+	Element Should Contain	cwbt34	2
+	Element Should Contain	cwbt35	3
+	Element Should Contain	cwbt36	−
+#Check button line5
+	Element Should Contain	cwbt40	Ans
+	Element Should Contain	cwbt41	EXP
+	#Element Should Contain	cwbt42	
+	Element Should Contain	cwbt43	0
+	Element Should Contain	cwbt44	.
+	Element Should Contain	cwbt45	=
+	Element Should Contain	cwbt46	+
+#Assert Result from Searching TC1
+	Show Case	(2 + 2)^3 =  
+	Assert Result	64
+#--------------------------------------------------------------------------------------------------------------------------------------------#
+TC2-Check Calculation factor
+	Click Element    	 cwbt23
+	Click Element	cwbt02
+	Click Element   	cwbt45
+#Assert Result from Searching TC2
+	Show Case	 4! =  
+	Assert Result	24
+#--------------------------------------------------------------------------------------------------------------------------------------------#

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.1 on win32)" generated="20200604 23:17:31.095" rpa="false">
+<suite id="s1" name="TestRobotPOCCom7" source="C:\Users\USER\workspace\robot-uvs\RobotFramwork\TestRobotPOCCom7">
+<suite id="s1-s1" name="TestSuvey COM7BananaMobile TH" source="C:\Users\USER\workspace\robot-uvs\RobotFramwork\TestRobotPOCCom7\TestSuvey_COM7BananaMobile_TH.robot">
+<test id="s1-s1-t1" name="TC1-Test Survey AdHoc_BananaMobile_Q1=1">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://atv-customize-dev.bizcuitvoc.com/com7-noti</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200604 23:17:31.436" level="INFO">Opening browser 'firefox' to base url 'http://atv-customize-dev.bizcuitvoc.com/com7-noti'.</msg>
+<msg timestamp="20200604 23:17:31.440" level="INFO">Firefox driver log is always forced to to: C:\Users\USER\workspace\robot-uvs\RobotFramwork\geckodriver-50.log</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="FAIL" starttime="20200604 23:17:36.042" endtime="20200604 23:17:36.043"></status>
+</kw>
+<msg timestamp="20200604 23:17:36.043" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+<status status="FAIL" starttime="20200604 23:17:31.436" endtime="20200604 23:17:36.044"></status>
+</kw>
+<status status="FAIL" starttime="20200604 23:17:31.435" endtime="20200604 23:17:36.044" critical="yes">Execution terminated by signal</status>
+</test>
+<test id="s1-s1-t2" name="TC2-Test Survey AdHoc_BananaMobile_Q1=2">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:17:36.045" endtime="20200604 23:17:36.048" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t3" name="TC3-Test Survey AdHoc_BananaMobile_Q1=3">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:17:36.049" endtime="20200604 23:17:36.051" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t4" name="TC4-Test Survey AdHoc_BananaMobile_Q1=4">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:17:36.052" endtime="20200604 23:17:36.053" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t5" name="TC5-Test Survey AdHoc_BananaMobile_Q1=5">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:17:36.054" endtime="20200604 23:17:36.055" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20200604 23:17:31.127" endtime="20200604 23:17:36.056"></status>
+</suite>
+<suite id="s1-s2" name="TestSuvey Com7BananaStore" source="C:\Users\USER\workspace\robot-uvs\RobotFramwork\TestRobotPOCCom7\TestSuvey_Com7BananaStore.robot">
+<test id="s1-s2-t1" name="TC1-Test Survey AdHoc_BananaStore_Q1=1">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:17:36.060" endtime="20200604 23:17:36.062" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-t2" name="TC2-Test Survey AdHoc_BananaStore_Q1=2">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:17:36.062" endtime="20200604 23:17:36.065" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-t3" name="TC3-Test Survey AdHoc_BananaStore_Q1=3">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:17:36.066" endtime="20200604 23:17:36.067" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-t4" name="TC4-Test Survey AdHoc_BananaStore_Q1=4">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:17:36.067" endtime="20200604 23:17:36.068" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-t5" name="TC5-Test Survey AdHoc_BananaStore_Q1=5">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:17:36.068" endtime="20200604 23:17:36.069" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20200604 23:17:36.059" endtime="20200604 23:17:36.069"></status>
+</suite>
+<suite id="s1-s3" name="TestSuvey COM7iCare TH" source="C:\Users\USER\workspace\robot-uvs\RobotFramwork\TestRobotPOCCom7\TestSuvey_COM7iCare_TH.robot">
+<test id="s1-s3-t1" name="TC1-Test Survey AdHoc_iCare_Q1_iCare=1">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:17:36.070" endtime="20200604 23:17:36.070" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s3-t2" name="TC2-Test Survey AdHoc_iCare_Q1_iCare=4">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:17:36.071" endtime="20200604 23:17:36.071" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s3-t3" name="TC3-Test Survey AdHoc_iCare_Q1_iCare=5">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:17:36.071" endtime="20200604 23:17:36.072" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20200604 23:17:36.070" endtime="20200604 23:17:36.072"></status>
+</suite>
+<suite id="s1-s4" name="TestSuvey COM7Studio7" source="C:\Users\USER\workspace\robot-uvs\RobotFramwork\TestRobotPOCCom7\TestSuvey_COM7Studio7.robot">
+<test id="s1-s4-t1" name="TC1-Test Survey AdHoc_Studio7_Q1=1">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:17:36.073" endtime="20200604 23:17:36.073" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-t2" name="TC2-Test Survey AdHoc_Studio7_Q1=2">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:17:36.073" endtime="20200604 23:17:36.074" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-t3" name="TC3-Test Survey AdHoc_Studio7_Q1=3">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:17:36.074" endtime="20200604 23:17:36.074" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-t4" name="TC4-Test Survey AdHoc_Studio7_Q1=4">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:17:36.074" endtime="20200604 23:17:36.075" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-t5" name="TC5-Test Survey AdHoc_Studio7_Q1=5">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:17:36.075" endtime="20200604 23:17:36.075" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20200604 23:17:36.072" endtime="20200604 23:17:36.075"></status>
+</suite>
+<suite id="s1-s5" name="TestSuvey Ustore TH" source="C:\Users\USER\workspace\robot-uvs\RobotFramwork\TestRobotPOCCom7\TestSuvey_Ustore_TH.robot">
+<test id="s1-s5-t1" name="TC1-Test Survey AdHoc_UStore_Q1=1">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:17:36.076" endtime="20200604 23:17:36.077" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s5-t2" name="TC2-Test Survey AdHoc_UStore_Q1=2">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:17:36.077" endtime="20200604 23:17:36.077" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s5-t3" name="TC3-Test Survey AdHoc_UStore_Q1=3">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:17:36.078" endtime="20200604 23:17:36.078" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s5-t4" name="TC4-Test Survey AdHoc_UStore_Q1=4">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:17:36.080" endtime="20200604 23:17:36.082" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s5-t5" name="TC5-Test Survey AdHoc_UStore_Q1=5">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:17:36.082" endtime="20200604 23:17:36.083" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20200604 23:17:36.076" endtime="20200604 23:17:36.084"></status>
+</suite>
+<status status="FAIL" starttime="20200604 23:17:31.097" endtime="20200604 23:17:36.086"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="23">Critical Tests</stat>
+<stat pass="0" fail="23">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
+<stat pass="0" fail="22">robot:exit</stat>
+</tag>
+<suite>
+<stat pass="0" fail="23" id="s1" name="TestRobotPOCCom7">TestRobotPOCCom7</stat>
+<stat pass="0" fail="5" id="s1-s1" name="TestSuvey COM7BananaMobile TH">TestRobotPOCCom7.TestSuvey COM7BananaMobile TH</stat>
+<stat pass="0" fail="5" id="s1-s2" name="TestSuvey Com7BananaStore">TestRobotPOCCom7.TestSuvey Com7BananaStore</stat>
+<stat pass="0" fail="3" id="s1-s3" name="TestSuvey COM7iCare TH">TestRobotPOCCom7.TestSuvey COM7iCare TH</stat>
+<stat pass="0" fail="5" id="s1-s4" name="TestSuvey COM7Studio7">TestRobotPOCCom7.TestSuvey COM7Studio7</stat>
+<stat pass="0" fail="5" id="s1-s5" name="TestSuvey Ustore TH">TestRobotPOCCom7.TestSuvey Ustore TH</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200604 23:17:36.043" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+</errors>
+</robot>

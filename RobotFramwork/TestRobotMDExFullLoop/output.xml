@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20190902 15:37:22.155" generator="Robot 3.0.4 (Python 2.7.8 on win32)">
+<suite source="E:\TestRobot\TestSuvey_NonIn1.robot" id="s1" name="TestSuvey NonIn1">
+<test id="s1-t1" name="1. เปิดเว็บไซต์ Survey">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20190902 15:37:22.364" level="INFO">Opening browser 'firefox' to base url 'https://s-atv-staging.bizcuitvoc.com/SandboxFullLoopN/?ivCount=1&amp;ivVal_1=1&amp;ivIdx_1=21'.</msg>
+<status status="PASS" endtime="20190902 15:37:30.380" starttime="20190902 15:37:22.363"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190902 15:37:30.691" starttime="20190902 15:37:30.381"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0.3</arg>
+</arguments>
+<status status="PASS" endtime="20190902 15:37:30.693" starttime="20190902 15:37:30.692"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${ONESECOND}</arg>
+</arguments>
+<msg timestamp="20190902 15:37:31.694" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20190902 15:37:31.694" starttime="20190902 15:37:30.694"></status>
+</kw>
+<status status="PASS" endtime="20190902 15:37:31.695" critical="yes" starttime="20190902 15:37:22.362"></status>
+</test>
+<test id="s1-t2" name="2. คลิก เริ่มต้น">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@class="btn start"]</arg>
+</arguments>
+<msg timestamp="20190902 15:37:31.704" level="INFO">Clicking element 'xpath=//*[@class="btn start"]'.</msg>
+<status status="PASS" endtime="20190902 15:37:32.577" starttime="20190902 15:37:31.704"></status>
+</kw>
+<status status="PASS" endtime="20190902 15:37:32.578" critical="yes" starttime="20190902 15:37:31.698"></status>
+</test>
+<test id="s1-t3" name="3. คลิกเลือก CSAT &gt; 7">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${CSATSCORE}</arg>
+</arguments>
+<msg timestamp="20190902 15:37:32.582" level="INFO">Clicking element 'xpath=//span[text()='8']'.</msg>
+<status status="PASS" endtime="20190902 15:37:33.408" starttime="20190902 15:37:32.582"></status>
+</kw>
+<status status="PASS" endtime="20190902 15:37:33.409" critical="yes" starttime="20190902 15:37:32.581"></status>
+</test>
+<test id="s1-t4" name="4. ข้อมูล OA">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name = csat_pos</arg>
+<arg>บริการดีมากค่ะ</arg>
+</arguments>
+<msg timestamp="20190902 15:37:33.420" level="INFO">Typing text 'บริการดีมากค่ะ' into text field 'name = csat_pos'.</msg>
+<status status="PASS" endtime="20190902 15:37:34.374" starttime="20190902 15:37:33.420"></status>
+</kw>
+<status status="PASS" endtime="20190902 15:37:34.375" critical="yes" starttime="20190902 15:37:33.419"></status>
+</test>
+<test id="s1-t5" name="5. คลิกปุ่ม ถัดไป">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Click Button}</arg>
+</arguments>
+<msg timestamp="20190902 15:37:34.379" level="INFO">Clicking element 'xpath=//*[@class="btn next"]'.</msg>
+<status status="PASS" endtime="20190902 15:37:35.275" starttime="20190902 15:37:34.379"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${ONESECOND}</arg>
+</arguments>
+<msg timestamp="20190902 15:37:36.277" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20190902 15:37:36.277" starttime="20190902 15:37:35.276"></status>
+</kw>
+<status status="PASS" endtime="20190902 15:37:36.277" critical="yes" starttime="20190902 15:37:34.378"></status>
+</test>
+<test id="s1-t6" name="6. คลิกเลือก ces &gt; 7">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${CESSCORE}</arg>
+</arguments>
+<msg timestamp="20190902 15:37:36.281" level="INFO">Clicking element 'xpath=/html/body/div[2]/div[2]/div[1]/div[4]/div[3]/div/div[2]/div[3]/div/div/div/div[2]/label[10]/span/span'.</msg>
+<status status="PASS" endtime="20190902 15:37:37.117" starttime="20190902 15:37:36.281"></status>
+</kw>
+<status status="PASS" endtime="20190902 15:37:37.118" critical="yes" starttime="20190902 15:37:36.279"></status>
+</test>
+<test id="s1-t7" name="7. คลิกเลือก ถัดไป">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@class="icon fl-fl-chevron-right"]</arg>
+</arguments>
+<msg timestamp="20190902 15:37:37.123" level="INFO">Clicking element 'xpath=//*[@class="icon fl-fl-chevron-right"]'.</msg>
+<status status="PASS" endtime="20190902 15:37:37.953" starttime="20190902 15:37:37.122"></status>
+</kw>
+<status status="PASS" endtime="20190902 15:37:37.953" critical="yes" starttime="20190902 15:37:37.121"></status>
+</test>
+<test id="s1-t8" name="8. คลิกเลือก rp &gt; 7">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${RPSCORE}</arg>
+</arguments>
+<msg timestamp="20190902 15:37:37.957" level="INFO">Clicking element 'xpath=/html/body/div[2]/div[2]/div[1]/div[4]/div[4]/div/div[2]/div[3]/div/div/div/div[2]/label[7]/span'.</msg>
+<status status="PASS" endtime="20190902 15:37:38.783" starttime="20190902 15:37:37.957"></status>
+</kw>
+<status status="PASS" endtime="20190902 15:37:38.783" critical="yes" starttime="20190902 15:37:37.956"></status>
+</test>
+<test id="s1-t9" name="9. คลิกเลือก nps &gt; 7">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${NPSSCORE}</arg>
+</arguments>
+<msg timestamp="20190902 15:37:38.788" level="INFO">Clicking element 'xpath=/html/body/div[2]/div[2]/div[1]/div[4]/div[5]/div/div[2]/div[3]/div/div/div/div[2]/label[10]/span'.</msg>
+<status status="PASS" endtime="20190902 15:37:39.613" starttime="20190902 15:37:38.787"></status>
+</kw>
+<status status="PASS" endtime="20190902 15:37:39.613" critical="yes" starttime="20190902 15:37:38.787"></status>
+</test>
+<test id="s1-t10" name="10. คลิก opt_in_contact">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${OPTIN}</arg>
+</arguments>
+<msg timestamp="20190902 15:37:39.619" level="INFO">Clicking element 'xpath=/html/body/div[2]/div[2]/div[1]/div[4]/div[6]/div/div[2]/div[3]/div[1]/div/label/span[1]'.</msg>
+<status status="PASS" endtime="20190902 15:37:40.449" starttime="20190902 15:37:39.618"></status>
+</kw>
+<status status="PASS" endtime="20190902 15:37:40.450" critical="yes" starttime="20190902 15:37:39.617"></status>
+</test>
+<test id="s1-t11" name="11. คลิกเลือก Location_Meta3">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//option[text()="เชียงราย"]</arg>
+</arguments>
+<msg timestamp="20190902 15:37:40.454" level="INFO">Clicking element 'xpath=//option[text()="เชียงราย"]'.</msg>
+<status status="PASS" endtime="20190902 15:37:41.299" starttime="20190902 15:37:40.454"></status>
+</kw>
+<status status="PASS" endtime="20190902 15:37:41.299" critical="yes" starttime="20190902 15:37:40.452"></status>
+</test>
+<test id="s1-t12" name="12. คลิกเลือก Location_Meta2">
+<status status="FAIL" endtime="20190902 15:37:41.302" critical="yes" starttime="20190902 15:37:41.302">Test case contains no keywords.</status>
+</test>
+<test id="s1-t13" name="13. คลิกเลือก Date_Time_Meta1">
+<status status="FAIL" endtime="20190902 15:37:41.305" critical="yes" starttime="20190902 15:37:41.304">Test case contains no keywords.</status>
+</test>
+<test id="s1-t14" name="14. คลิกเลือก q1">
+<status status="FAIL" endtime="20190902 15:37:41.307" critical="yes" starttime="20190902 15:37:41.306">Test case contains no keywords.</status>
+</test>
+<test id="s1-t15" name="15. คลิกเลือก q2">
+<status status="FAIL" endtime="20190902 15:37:41.309" critical="yes" starttime="20190902 15:37:41.308">Test case contains no keywords.</status>
+</test>
+<test id="s1-t16" name="16. คลิกเลือก q3">
+<status status="FAIL" endtime="20190902 15:37:41.313" critical="yes" starttime="20190902 15:37:41.310">Test case contains no keywords.</status>
+</test>
+<test id="s1-t17" name="17. คลิกเลือก media">
+<status status="FAIL" endtime="20190902 15:37:41.318" critical="yes" starttime="20190902 15:37:41.316">Test case contains no keywords.</status>
+</test>
+<test id="s1-t18" name="18. คลิกเลือก q_sug">
+<status status="FAIL" endtime="20190902 15:37:41.328" critical="yes" starttime="20190902 15:37:41.326">Test case contains no keywords.</status>
+</test>
+<test id="s1-t19" name="19. คลิกเลือก เพศ,">
+<status status="FAIL" endtime="20190902 15:37:41.332" critical="yes" starttime="20190902 15:37:41.331">Test case contains no keywords.</status>
+</test>
+<test id="s1-t20" name="20. คลิกเลือก อายุ">
+<status status="FAIL" endtime="20190902 15:37:41.334" critical="yes" starttime="20190902 15:37:41.333">Test case contains no keywords.</status>
+</test>
+<test id="s1-t21" name="21. คลิกเลือก สถานะการสมรส">
+<status status="FAIL" endtime="20190902 15:37:41.337" critical="yes" starttime="20190902 15:37:41.335">Test case contains no keywords.</status>
+</test>
+<test id="s1-t22" name="22. คลิกเลือก อาชีพ">
+<status status="FAIL" endtime="20190902 15:37:41.341" critical="yes" starttime="20190902 15:37:41.340">Test case contains no keywords.</status>
+</test>
+<test id="s1-t23" name="23. คลิกเลือก รายได้ส่วนตัวเฉลี่ยต่อเดือน">
+<status status="FAIL" endtime="20190902 15:37:41.345" critical="yes" starttime="20190902 15:37:41.342">Test case contains no keywords.</status>
+</test>
+<test id="s1-t24" name="24. กรอกข้อมูล ชื่อ">
+<status status="FAIL" endtime="20190902 15:37:41.348" critical="yes" starttime="20190902 15:37:41.347">Test case contains no keywords.</status>
+</test>
+<test id="s1-t25" name="25. กรอกข้อมูล นามสกุล">
+<status status="FAIL" endtime="20190902 15:37:41.359" critical="yes" starttime="20190902 15:37:41.357">Test case contains no keywords.</status>
+</test>
+<test id="s1-t26" name="26. กรอกข้อมูลเบอร์โทร">
+<status status="FAIL" endtime="20190902 15:37:41.363" critical="yes" starttime="20190902 15:37:41.361">Test case contains no keywords.</status>
+</test>
+<test id="s1-t27" name="27. คลิกเลือก ถัดไป">
+<kw name="Close Window" library="Selenium2Library">
+<doc>Closes currently opened pop-up window.</doc>
+<status status="PASS" endtime="20190902 15:37:44.588" starttime="20190902 15:37:41.366"></status>
+</kw>
+<status status="PASS" endtime="20190902 15:37:44.589" critical="yes" starttime="20190902 15:37:41.365"></status>
+</test>
+<status status="FAIL" endtime="20190902 15:37:44.593" starttime="20190902 15:37:22.158"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="15" pass="12">Critical Tests</stat>
+<stat fail="15" pass="12">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="15" id="s1" name="TestSuvey NonIn1" pass="12">TestSuvey NonIn1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
