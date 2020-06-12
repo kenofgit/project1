@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.1 on win32)" generated="20200604 23:10:44.985" rpa="false">
+<suite id="s1" name="TestRobotPOCCom7" source="C:\Users\USER\workspace\robot-uvs\RobotFramwork\TestRobotPOCCom7">
+<suite id="s1-s1" name="TestSuvey COM7BananaMobile TH" source="C:\Users\USER\workspace\robot-uvs\RobotFramwork\TestRobotPOCCom7\TestSuvey_COM7BananaMobile_TH.robot">
+<test id="s1-s1-t1" name="TC1-Test Survey AdHoc_BananaMobile_Q1=1">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://atv-customize-dev.bizcuitvoc.com/com7-noti</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200604 23:10:45.189" level="INFO">Opening browser 'firefox' to base url 'http://atv-customize-dev.bizcuitvoc.com/com7-noti'.</msg>
+<msg timestamp="20200604 23:10:45.191" level="INFO">Firefox driver log is always forced to to: C:\Users\USER\workspace\robot-uvs\RobotFramwork\geckodriver-29.log</msg>
+<status status="PASS" starttime="20200604 23:10:45.189" endtime="20200604 23:10:50.666"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200604 23:10:52.668" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200604 23:10:50.666" endtime="20200604 23:10:52.669"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>id=myBranchNoSelect</arg>
+<arg>bnm-001</arg>
+</arguments>
+<msg timestamp="20200604 23:10:52.670" level="INFO">Selecting options from selection list 'id=myBranchNoSelect' by value bnm-001.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200604 23:10:52.811" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200604 23:10:52.697" endtime="20200604 23:10:52.811"></status>
+</kw>
+<msg timestamp="20200604 23:10:52.812" level="FAIL">List with locator 'id=myBranchNoSelect' not found.</msg>
+<status status="FAIL" starttime="20200604 23:10:52.669" endtime="20200604 23:10:52.812"></status>
+</kw>
+<status status="FAIL" starttime="20200604 23:10:45.188" endtime="20200604 23:10:52.812" critical="yes">List with locator 'id=myBranchNoSelect' not found.</status>
+</test>
+<test id="s1-s1-t2" name="TC2-Test Survey AdHoc_BananaMobile_Q1=2">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://atv-customize-dev.bizcuitvoc.com/com7-noti</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200604 23:10:52.814" level="INFO">Opening browser 'firefox' to base url 'http://atv-customize-dev.bizcuitvoc.com/com7-noti'.</msg>
+<msg timestamp="20200604 23:10:52.817" level="INFO">Firefox driver log is always forced to to: C:\Users\USER\workspace\robot-uvs\RobotFramwork\geckodriver-30.log</msg>
+<status status="PASS" starttime="20200604 23:10:52.814" endtime="20200604 23:10:58.244"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200604 23:11:00.247" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200604 23:10:58.245" endtime="20200604 23:11:00.248"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>id=myBranchNoSelect</arg>
+<arg>bnm-001</arg>
+</arguments>
+<msg timestamp="20200604 23:11:00.249" level="INFO">Selecting options from selection list 'id=myBranchNoSelect' by value bnm-001.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200604 23:11:00.397" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200604 23:11:00.264" endtime="20200604 23:11:00.397"></status>
+</kw>
+<msg timestamp="20200604 23:11:00.397" level="FAIL">List with locator 'id=myBranchNoSelect' not found.</msg>
+<status status="FAIL" starttime="20200604 23:11:00.248" endtime="20200604 23:11:00.398"></status>
+</kw>
+<status status="FAIL" starttime="20200604 23:10:52.814" endtime="20200604 23:11:00.398" critical="yes">List with locator 'id=myBranchNoSelect' not found.</status>
+</test>
+<test id="s1-s1-t3" name="TC3-Test Survey AdHoc_BananaMobile_Q1=3">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://atv-customize-dev.bizcuitvoc.com/com7-noti</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200604 23:11:00.399" level="INFO">Opening browser 'firefox' to base url 'http://atv-customize-dev.bizcuitvoc.com/com7-noti'.</msg>
+<msg timestamp="20200604 23:11:00.401" level="INFO">Firefox driver log is always forced to to: C:\Users\USER\workspace\robot-uvs\RobotFramwork\geckodriver-31.log</msg>
+<status status="PASS" starttime="20200604 23:11:00.399" endtime="20200604 23:11:05.878"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200604 23:11:07.882" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200604 23:11:05.878" endtime="20200604 23:11:07.882"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>id=myBranchNoSelect</arg>
+<arg>bnm-002</arg>
+</arguments>
+<msg timestamp="20200604 23:11:07.884" level="INFO">Selecting options from selection list 'id=myBranchNoSelect' by value bnm-002.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200604 23:11:07.955" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-23.png"&gt;&lt;img src="selenium-screenshot-23.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200604 23:11:07.894" endtime="20200604 23:11:07.955"></status>
+</kw>
+<msg timestamp="20200604 23:11:07.956" level="FAIL">List with locator 'id=myBranchNoSelect' not found.</msg>
+<status status="FAIL" starttime="20200604 23:11:07.883" endtime="20200604 23:11:07.956"></status>
+</kw>
+<status status="FAIL" starttime="20200604 23:11:00.398" endtime="20200604 23:11:07.956" critical="yes">List with locator 'id=myBranchNoSelect' not found.</status>
+</test>
+<test id="s1-s1-t4" name="TC4-Test Survey AdHoc_BananaMobile_Q1=4">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://atv-customize-dev.bizcuitvoc.com/com7-noti</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200604 23:11:07.957" level="INFO">Opening browser 'firefox' to base url 'http://atv-customize-dev.bizcuitvoc.com/com7-noti'.</msg>
+<msg timestamp="20200604 23:11:07.959" level="INFO">Firefox driver log is always forced to to: C:\Users\USER\workspace\robot-uvs\RobotFramwork\geckodriver-32.log</msg>
+<status status="PASS" starttime="20200604 23:11:07.957" endtime="20200604 23:11:14.056"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200604 23:11:16.058" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200604 23:11:14.056" endtime="20200604 23:11:16.059"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>id=myBranchNoSelect</arg>
+<arg>bnm-002</arg>
+</arguments>
+<msg timestamp="20200604 23:11:16.062" level="INFO">Selecting options from selection list 'id=myBranchNoSelect' by value bnm-002.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200604 23:11:16.155" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-24.png"&gt;&lt;img src="selenium-screenshot-24.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200604 23:11:16.081" endtime="20200604 23:11:16.155"></status>
+</kw>
+<msg timestamp="20200604 23:11:16.156" level="FAIL">List with locator 'id=myBranchNoSelect' not found.</msg>
+<status status="FAIL" starttime="20200604 23:11:16.060" endtime="20200604 23:11:16.156"></status>
+</kw>
+<status status="FAIL" starttime="20200604 23:11:07.956" endtime="20200604 23:11:16.156" critical="yes">List with locator 'id=myBranchNoSelect' not found.</status>
+</test>
+<test id="s1-s1-t5" name="TC5-Test Survey AdHoc_BananaMobile_Q1=5">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://atv-customize-dev.bizcuitvoc.com/com7-noti</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200604 23:11:16.157" level="INFO">Opening browser 'firefox' to base url 'http://atv-customize-dev.bizcuitvoc.com/com7-noti'.</msg>
+<msg timestamp="20200604 23:11:16.159" level="INFO">Firefox driver log is always forced to to: C:\Users\USER\workspace\robot-uvs\RobotFramwork\geckodriver-33.log</msg>
+<status status="PASS" starttime="20200604 23:11:16.157" endtime="20200604 23:11:22.225"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200604 23:11:24.228" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200604 23:11:22.225" endtime="20200604 23:11:24.228"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>id=myBranchNoSelect</arg>
+<arg>bnm-002</arg>
+</arguments>
+<msg timestamp="20200604 23:11:24.229" level="INFO">Selecting options from selection list 'id=myBranchNoSelect' by value bnm-002.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200604 23:11:24.318" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-25.png"&gt;&lt;img src="selenium-screenshot-25.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200604 23:11:24.234" endtime="20200604 23:11:24.318"></status>
+</kw>
+<msg timestamp="20200604 23:11:24.319" level="FAIL">List with locator 'id=myBranchNoSelect' not found.</msg>
+<status status="FAIL" starttime="20200604 23:11:24.228" endtime="20200604 23:11:24.319"></status>
+</kw>
+<status status="FAIL" starttime="20200604 23:11:16.156" endtime="20200604 23:11:24.319" critical="yes">List with locator 'id=myBranchNoSelect' not found.</status>
+</test>
+<status status="FAIL" starttime="20200604 23:10:45.005" endtime="20200604 23:11:24.320"></status>
+</suite>
+<suite id="s1-s2" name="TestSuvey Com7BananaStore" source="C:\Users\USER\workspace\robot-uvs\RobotFramwork\TestRobotPOCCom7\TestSuvey_Com7BananaStore.robot">
+<test id="s1-s2-t1" name="TC1-Test Survey AdHoc_BananaStore_Q1=1">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://13.251.180.238/com7-noti</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200604 23:11:24.334" level="INFO">Opening browser 'firefox' to base url 'http://13.251.180.238/com7-noti'.</msg>
+<msg timestamp="20200604 23:11:24.336" level="INFO">Firefox driver log is always forced to to: C:\Users\USER\workspace\robot-uvs\RobotFramwork\geckodriver-34.log</msg>
+<status status="PASS" starttime="20200604 23:11:24.334" endtime="20200604 23:11:30.353"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200604 23:11:32.370" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200604 23:11:30.353" endtime="20200604 23:11:32.370"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>id=myBranchNoSelect</arg>
+<arg>bnn-001</arg>
+</arguments>
+<msg timestamp="20200604 23:11:32.370" level="INFO">Selecting options from selection list 'id=myBranchNoSelect' by value bnn-001.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200604 23:11:32.433" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-26.png"&gt;&lt;img src="selenium-screenshot-26.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200604 23:11:32.372" endtime="20200604 23:11:32.433"></status>
+</kw>
+<msg timestamp="20200604 23:11:32.433" level="FAIL">List with locator 'id=myBranchNoSelect' not found.</msg>
+<status status="FAIL" starttime="20200604 23:11:32.370" endtime="20200604 23:11:32.433"></status>
+</kw>
+<status status="FAIL" starttime="20200604 23:11:24.333" endtime="20200604 23:11:32.433" critical="yes">List with locator 'id=myBranchNoSelect' not found.</status>
+</test>
+<test id="s1-s2-t2" name="TC2-Test Survey AdHoc_BananaStore_Q1=2">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://13.251.180.238/com7-noti</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200604 23:11:32.433" level="INFO">Opening browser 'firefox' to base url 'http://13.251.180.238/com7-noti'.</msg>
+<msg timestamp="20200604 23:11:32.433" level="INFO">Firefox driver log is always forced to to: C:\Users\USER\workspace\robot-uvs\RobotFramwork\geckodriver-35.log</msg>
+<status status="PASS" starttime="20200604 23:11:32.433" endtime="20200604 23:11:38.019"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200604 23:11:40.020" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200604 23:11:38.019" endtime="20200604 23:11:40.020"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>id=myBranchNoSelect</arg>
+<arg>bnn-002</arg>
+</arguments>
+<msg timestamp="20200604 23:11:40.021" level="INFO">Selecting options from selection list 'id=myBranchNoSelect' by value bnn-002.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200604 23:11:40.098" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-27.png"&gt;&lt;img src="selenium-screenshot-27.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200604 23:11:40.027" endtime="20200604 23:11:40.098"></status>
+</kw>
+<msg timestamp="20200604 23:11:40.098" level="FAIL">List with locator 'id=myBranchNoSelect' not found.</msg>
+<status status="FAIL" starttime="20200604 23:11:40.020" endtime="20200604 23:11:40.098"></status>
+</kw>
+<status status="FAIL" starttime="20200604 23:11:32.433" endtime="20200604 23:11:40.098" critical="yes">List with locator 'id=myBranchNoSelect' not found.</status>
+</test>
+<test id="s1-s2-t3" name="TC3-Test Survey AdHoc_BananaStore_Q1=3">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://13.251.180.238/com7-noti</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200604 23:11:40.100" level="INFO">Opening browser 'firefox' to base url 'http://13.251.180.238/com7-noti'.</msg>
+<msg timestamp="20200604 23:11:40.102" level="INFO">Firefox driver log is always forced to to: C:\Users\USER\workspace\robot-uvs\RobotFramwork\geckodriver-36.log</msg>
+<status status="PASS" starttime="20200604 23:11:40.100" endtime="20200604 23:11:46.169"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200604 23:11:48.172" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200604 23:11:46.170" endtime="20200604 23:11:48.172"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>id=myBranchNoSelect</arg>
+<arg>bnn-002</arg>
+</arguments>
+<msg timestamp="20200604 23:11:48.173" level="INFO">Selecting options from selection list 'id=myBranchNoSelect' by value bnn-002.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200604 23:11:48.262" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-28.png"&gt;&lt;img src="selenium-screenshot-28.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200604 23:11:48.184" endtime="20200604 23:11:48.262"></status>
+</kw>
+<msg timestamp="20200604 23:11:48.264" level="FAIL">List with locator 'id=myBranchNoSelect' not found.</msg>
+<status status="FAIL" starttime="20200604 23:11:48.173" endtime="20200604 23:11:48.264"></status>
+</kw>
+<status status="FAIL" starttime="20200604 23:11:40.099" endtime="20200604 23:11:48.264" critical="yes">List with locator 'id=myBranchNoSelect' not found.</status>
+</test>
+<test id="s1-s2-t4" name="TC4-Test Survey AdHoc_BananaStore_Q1=4">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://13.251.180.238/com7-noti</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200604 23:11:48.265" level="INFO">Opening browser 'firefox' to base url 'http://13.251.180.238/com7-noti'.</msg>
+<msg timestamp="20200604 23:11:48.268" level="INFO">Firefox driver log is always forced to to: C:\Users\USER\workspace\robot-uvs\RobotFramwork\geckodriver-37.log</msg>
+<status status="PASS" starttime="20200604 23:11:48.265" endtime="20200604 23:11:53.767"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200604 23:11:55.770" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200604 23:11:53.767" endtime="20200604 23:11:55.770"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>id=myBranchNoSelect</arg>
+<arg>bnn-002</arg>
+</arguments>
+<msg timestamp="20200604 23:11:55.770" level="INFO">Selecting options from selection list 'id=myBranchNoSelect' by value bnn-002.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200604 23:11:55.856" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-29.png"&gt;&lt;img src="selenium-screenshot-29.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200604 23:11:55.777" endtime="20200604 23:11:55.856"></status>
+</kw>
+<msg timestamp="20200604 23:11:55.856" level="FAIL">List with locator 'id=myBranchNoSelect' not found.</msg>
+<status status="FAIL" starttime="20200604 23:11:55.770" endtime="20200604 23:11:55.857"></status>
+</kw>
+<status status="FAIL" starttime="20200604 23:11:48.265" endtime="20200604 23:11:55.857" critical="yes">List with locator 'id=myBranchNoSelect' not found.</status>
+</test>
+<test id="s1-s2-t5" name="TC5-Test Survey AdHoc_BananaStore_Q1=5">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://13.251.180.238/com7-noti</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200604 23:11:55.858" level="INFO">Opening browser 'firefox' to base url 'http://13.251.180.238/com7-noti'.</msg>
+<msg timestamp="20200604 23:11:55.860" level="INFO">Firefox driver log is always forced to to: C:\Users\USER\workspace\robot-uvs\RobotFramwork\geckodriver-38.log</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="FAIL" starttime="20200604 23:12:01.348" endtime="20200604 23:12:01.349"></status>
+</kw>
+<msg timestamp="20200604 23:12:01.349" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+<status status="FAIL" starttime="20200604 23:11:55.857" endtime="20200604 23:12:01.349"></status>
+</kw>
+<status status="FAIL" starttime="20200604 23:11:55.857" endtime="20200604 23:12:01.350" critical="yes">Execution terminated by signal</status>
+</test>
+<status status="FAIL" starttime="20200604 23:11:24.323" endtime="20200604 23:12:01.352"></status>
+</suite>
+<suite id="s1-s3" name="TestSuvey COM7iCare TH" source="C:\Users\USER\workspace\robot-uvs\RobotFramwork\TestRobotPOCCom7\TestSuvey_COM7iCare_TH.robot">
+<test id="s1-s3-t1" name="TC1-Test Survey AdHoc_iCare_Q1_iCare=1">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:12:01.359" endtime="20200604 23:12:01.360" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s3-t2" name="TC2-Test Survey AdHoc_iCare_Q1_iCare=4">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:12:01.360" endtime="20200604 23:12:01.361" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s3-t3" name="TC3-Test Survey AdHoc_iCare_Q1_iCare=5">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:12:01.362" endtime="20200604 23:12:01.363" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20200604 23:12:01.358" endtime="20200604 23:12:01.363"></status>
+</suite>
+<suite id="s1-s4" name="TestSuvey COM7Studio7" source="C:\Users\USER\workspace\robot-uvs\RobotFramwork\TestRobotPOCCom7\TestSuvey_COM7Studio7.robot">
+<test id="s1-s4-t1" name="TC1-Test Survey AdHoc_Studio7_Q1=1">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:12:01.366" endtime="20200604 23:12:01.366" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-t2" name="TC2-Test Survey AdHoc_Studio7_Q1=2">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:12:01.367" endtime="20200604 23:12:01.368" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-t3" name="TC3-Test Survey AdHoc_Studio7_Q1=3">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:12:01.368" endtime="20200604 23:12:01.369" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-t4" name="TC4-Test Survey AdHoc_Studio7_Q1=4">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:12:01.369" endtime="20200604 23:12:01.370" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-t5" name="TC5-Test Survey AdHoc_Studio7_Q1=5">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:12:01.371" endtime="20200604 23:12:01.372" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20200604 23:12:01.365" endtime="20200604 23:12:01.373"></status>
+</suite>
+<suite id="s1-s5" name="TestSuvey Ustore TH" source="C:\Users\USER\workspace\robot-uvs\RobotFramwork\TestRobotPOCCom7\TestSuvey_Ustore_TH.robot">
+<test id="s1-s5-t1" name="TC1-Test Survey AdHoc_UStore_Q1=1">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:12:01.377" endtime="20200604 23:12:01.378" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s5-t2" name="TC2-Test Survey AdHoc_UStore_Q1=2">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:12:01.378" endtime="20200604 23:12:01.379" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s5-t3" name="TC3-Test Survey AdHoc_UStore_Q1=3">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:12:01.380" endtime="20200604 23:12:01.380" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s5-t4" name="TC4-Test Survey AdHoc_UStore_Q1=4">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:12:01.381" endtime="20200604 23:12:01.382" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s5-t5" name="TC5-Test Survey AdHoc_UStore_Q1=5">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20200604 23:12:01.382" endtime="20200604 23:12:01.383" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20200604 23:12:01.374" endtime="20200604 23:12:01.384"></status>
+</suite>
+<status status="FAIL" starttime="20200604 23:10:44.989" endtime="20200604 23:12:01.387"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="23">Critical Tests</stat>
+<stat pass="0" fail="23">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="10" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
+<stat pass="0" fail="13">robot:exit</stat>
+</tag>
+<suite>
+<stat pass="0" fail="23" id="s1" name="TestRobotPOCCom7">TestRobotPOCCom7</stat>
+<stat pass="0" fail="5" id="s1-s1" name="TestSuvey COM7BananaMobile TH">TestRobotPOCCom7.TestSuvey COM7BananaMobile TH</stat>
+<stat pass="0" fail="5" id="s1-s2" name="TestSuvey Com7BananaStore">TestRobotPOCCom7.TestSuvey Com7BananaStore</stat>
+<stat pass="0" fail="3" id="s1-s3" name="TestSuvey COM7iCare TH">TestRobotPOCCom7.TestSuvey COM7iCare TH</stat>
+<stat pass="0" fail="5" id="s1-s4" name="TestSuvey COM7Studio7">TestRobotPOCCom7.TestSuvey COM7Studio7</stat>
+<stat pass="0" fail="5" id="s1-s5" name="TestSuvey Ustore TH">TestRobotPOCCom7.TestSuvey Ustore TH</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200604 23:12:01.349" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+</errors>
+</robot>

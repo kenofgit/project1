@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.1 on win32)" generated="20200604 22:54:43.451" rpa="false">
+<suite id="s1" name="TestRobotPOCCom7" source="C:\Users\USER\workspace\robot-uvs\RobotFramwork\TestRobotPOCCom7">
+<suite id="s1-s1" name="TestSuvey COM7BananaMobile TH" source="C:\Users\USER\workspace\robot-uvs\RobotFramwork\TestRobotPOCCom7\TestSuvey_COM7BananaMobile_TH.robot">
+<test id="s1-s1-t1" name="TC1-Test Survey AdHoc_BananaMobile_Q1=1">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://atv-customize-dev.bizcuitvoc.com/com7-noti</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200604 22:54:43.764" level="INFO">Opening browser 'firefox' to base url 'http://atv-customize-dev.bizcuitvoc.com/com7-noti'.</msg>
+<msg timestamp="20200604 22:54:43.779" level="INFO">Firefox driver log is always forced to to: C:\Users\USER\workspace\robot-uvs\RobotFramwork\geckodriver-1.log</msg>
+<status status="PASS" starttime="20200604 22:54:43.764" endtime="20200604 22:54:49.982"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200604 22:54:51.987" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200604 22:54:49.982" endtime="20200604 22:54:51.987"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>id=myBranchNoSelect</arg>
+<arg>bnm-001</arg>
+</arguments>
+<msg timestamp="20200604 22:54:51.987" level="INFO">Selecting options from selection list 'id=myBranchNoSelect' by value bnm-001.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200604 22:54:52.103" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200604 22:54:52.003" endtime="20200604 22:54:52.103"></status>
+</kw>
+<msg timestamp="20200604 22:54:52.141" level="FAIL">List with locator 'id=myBranchNoSelect' not found.</msg>
+<status status="FAIL" starttime="20200604 22:54:51.987" endtime="20200604 22:54:52.141"></status>
+</kw>
+<status status="FAIL" starttime="20200604 22:54:43.764" endtime="20200604 22:54:52.141" critical="yes">List with locator 'id=myBranchNoSelect' not found.</status>
+</test>
+<test id="s1-s1-t2" name="TC2-Test Survey AdHoc_BananaMobile_Q1=2">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://atv-customize-dev.bizcuitvoc.com/com7-noti</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200604 22:54:52.156" level="INFO">Opening browser 'firefox' to base url 'http://atv-customize-dev.bizcuitvoc.com/com7-noti'.</msg>
+<msg timestamp="20200604 22:54:52.156" level="INFO">Firefox driver log is always forced to to: C:\Users\USER\workspace\robot-uvs\RobotFramwork\geckodriver-2.log</msg>
+<status status="PASS" starttime="20200604 22:54:52.141" endtime="20200604 22:54:57.600"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200604 22:54:59.604" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200604 22:54:57.600" endtime="20200604 22:54:59.604"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>id=myBranchNoSelect</arg>
+<arg>bnm-001</arg>
+</arguments>
+<msg timestamp="20200604 22:54:59.604" level="INFO">Selecting options from selection list 'id=myBranchNoSelect' by value bnm-001.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200604 22:54:59.774" level="FAIL">InvalidSessionIdException: Message: Tried to run command without establishing a connection
+</msg>
+<status status="FAIL" starttime="20200604 22:54:59.736" endtime="20200604 22:54:59.774"></status>
+</kw>
+<msg timestamp="20200604 22:54:59.774" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: InvalidSessionIdException: Message: Tried to run command without establishing a connection
+</msg>
+<msg timestamp="20200604 22:54:59.774" level="FAIL">WebDriverException: Message: Failed to decode response from marionette
+</msg>
+<status status="FAIL" starttime="20200604 22:54:59.604" endtime="20200604 22:54:59.774"></status>
+</kw>
+<status status="FAIL" starttime="20200604 22:54:52.141" endtime="20200604 22:54:59.774" critical="yes">WebDriverException: Message: Failed to decode response from marionette
+</status>
+</test>
+<test id="s1-s1-t3" name="TC3-Test Survey AdHoc_BananaMobile_Q1=3">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://atv-customize-dev.bizcuitvoc.com/com7-noti</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200604 22:54:59.774" level="INFO">Opening browser 'firefox' to base url 'http://atv-customize-dev.bizcuitvoc.com/com7-noti'.</msg>
+<msg timestamp="20200604 22:54:59.774" level="INFO">Firefox driver log is always forced to to: C:\Users\USER\workspace\robot-uvs\RobotFramwork\geckodriver-3.log</msg>
+<status status="PASS" starttime="20200604 22:54:59.774" endtime="20200604 22:55:04.702"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200604 22:55:06.707" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200604 22:55:04.702" endtime="20200604 22:55:06.707"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>id=myBranchNoSelect</arg>
+<arg>bnm-002</arg>
+</arguments>
+<msg timestamp="20200604 22:55:06.707" level="INFO">Selecting options from selection list 'id=myBranchNoSelect' by value bnm-002.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200604 22:55:06.800" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200604 22:55:06.723" endtime="20200604 22:55:06.800"></status>
+</kw>
+<msg timestamp="20200604 22:55:06.800" level="FAIL">List with locator 'id=myBranchNoSelect' not found.</msg>
+<status status="FAIL" starttime="20200604 22:55:06.707" endtime="20200604 22:55:06.800"></status>
+</kw>
+<status status="FAIL" starttime="20200604 22:54:59.774" endtime="20200604 22:55:06.800" critical="yes">List with locator 'id=myBranchNoSelect' not found.</status>
+</test>
+<test id="s1-s1-t4" name="TC4-Test Survey AdHoc_BananaMobile_Q1=4">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://atv-customize-dev.bizcuitvoc.com/com7-noti</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200604 22:55:06.816" level="INFO">Opening browser 'firefox' to base url 'http://atv-customize-dev.bizcuitvoc.com/com7-noti'.</msg>
+<msg timestamp="20200604 22:55:06.816" level="INFO">Firefox driver log is always forced to to: C:\Users\USER\workspace\robot-uvs\RobotFramwork\geckodriver-4.log</msg>
+<status status="PASS" starttime="20200604 22:55:06.816" endtime="20200604 22:55:12.885"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.
